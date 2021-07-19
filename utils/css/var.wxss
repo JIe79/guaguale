@@ -1,0 +1,7 @@
+page{
+  --page-font-size: 26rpx;
+  --page-font-color: #333333;
+  --page-font-family: "Microsoft YaHei";
+  --page-bg: #f2f3f5;
+  --primary-color: #0ab088;
+}

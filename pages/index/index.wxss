@@ -1,0 +1,36 @@
+page{
+  --cover-bg-color: #539dcc;
+}
+
+.scratch{
+  width: 48.5%;
+  margin-bottom: 3%;
+}
+
+.scratch canvas{
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.scratch canvas.bg{
+  background-color: var(--cover-bg-color);
+}
+
+.award{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.award .award-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+
+/* 图标-右箭头 */
+.icon-link-arrow-right{
+  margin-left: 11rpx;
+  width: 16rpx;
+  height: 26rpx;
+}
+
+/* 表单-右箭头 */
+.icon-input-arrow-right{
+  margin-left: 16rpx;
+  width:12rpx;
+}
+
+/* 图标-单选 */
+.icon-select{
+  margin-right: 15rpx;
+  width: 46rpx;
+	height: 46rpx;
+}
+/* 图标-下箭头 */
+.icon-down{
+  margin-left: 11rpx;
+  width: 29rpx;
+	height: 16rpx;
+}

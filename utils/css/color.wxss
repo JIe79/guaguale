@@ -1,0 +1,21 @@
+.color-primary{
+  color: var(--primary-color);
+}
+.bg-primary{
+  background-color: var(--primary-color);
+}
+.border-primary{
+  border: 2rpx solid var(--primary-color);
+}
+.border-primary-top{
+  border-top: 2rpx solid var(--primary-color);
+}
+.border-primary-bottom{
+  border-bottom: 2rpx solid var(--primary-color);
+}
+.border-primary-left{
+  border-left: 2rpx solid var(--primary-color);
+}
+.border-primary-right{
+  border-right: 2rpx solid var(--primary-color);
+}

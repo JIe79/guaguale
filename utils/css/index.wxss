@@ -1,0 +1,61 @@
+@import "./var.wxss";
+@import "./base.wxss";
+@import "./color.wxss";
+@import "./icon.wxss";
+@import "./button.wxss";
+
+/* 初始化页面 */
+page{
+  position: relative;
+  font-size: var(--page-font-size);
+  background: var(--page-bg);
+  color: var(--page-font-color);
+  font-family: var(--page-font-family);
+}
+
+.bg-page{
+  background-color: var(--page-bg);
+}
+
+.page-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 690rpx;
+}
+.page-scroll{
+  height: calc(100vh - 112rpx);
+}
+
+.page-content-scroll{
+  padding-bottom: 60rpx;
+}
+
+/* 顶部图片 */
+.top-pic {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+/* 背景全屏 */
+.bg-full-screen {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* input-placeholder */
+.placeholder-class{
+  color: #bfbfbf;
+  letter-spacing: 2rpx;
+}
+
+.picker text{
+	min-height: 45rpx;
+}
