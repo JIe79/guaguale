@@ -69,10 +69,28 @@ function getCanvas(queryName) {
   })
 }
 
+/**
+ * 获取Canvas的context(type=2d)
+ * @param {String} queryName 查询信息
+ */
+function getCanvas2D(queryName) {
+  return new Promise((resolve) => {
+    $(queryName)
+    .fields({ id: true, node: true, size: true })
+    .exec(res => {
+      const canvas = res[0].node
+      canvas.width = res[0].width
+      canvas.height = res[0].height
+      resolve(canvas)
+    })
+  })
+}
+
 export {
   $,
   getImageByUrl,
   getDomRect,
   canvasToImgByCanvasId,
   getCanvas,
+  getCanvas2D,
 }

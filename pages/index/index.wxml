@@ -2,7 +2,7 @@
 
 <view class="screen-full">
   <view class="page-container mt-50 flex j-s flex-wrap">
-    <block wx:for="{{ awardList }}" wx:key="index">
+    <block wx:for="{{ award_list }}" wx:key="index">
       <view class="scratch por">
         <view class="award">
           <image hidden="{{ visible_award }}" class="award-img" src="{{item.path}}" mode="widthFix"></image>
@@ -10,9 +10,11 @@
         <canvas 
           class="{{ visible_award ? 'bg' : '' }}"
           id="{{ defaultCanvasName + index }}" 
-          canvas-id="{{ defaultCanvasName + index }}"
+          type="2d"
           data-canvas_name="{{ defaultCanvasName + index}}"
+          bindtouchstart="touchStart"
           bindtouchmove="touchMove"
+          bindtouchend="touchEnd"
         ></canvas>
       </view>
     </block>
